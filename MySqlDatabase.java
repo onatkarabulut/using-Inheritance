@@ -1,21 +1,13 @@
-public class MySqlDatabase implements IDatabase {
-   @Override 
-   public void add(){
-      System.out.println("add the Mysql database");
-   }
+public class MySqlDatabase extends AbstractDatabase{
 
-   @Override 
-   public void delete(){
-      System.out.println("delete the Mysql database");
+   @Override
+   void get() {
+      System.out.println("MySql updated...");
    }
 
    @Override
-   public void get(){
-      System.out.println("get the Mysql database");
+   void update() {
+      System.out.println("MySql got data...");
    }
-
-   @Override
-   public void update(){
-      System.out.println("update the Mysql database");
-   }
+   
 }
